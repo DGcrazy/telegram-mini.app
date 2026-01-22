@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ZILA Vesting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>⚡ ZILA Vesting</h2>
+
+  <button onclick="connect()">🔗 Connect Wallet</button>
+
+  <div class="info">
+    <p>Total Vesting: <span id="total">-</span></p>
+    <p>Claimed: <span id="claimed">-</span></p>
+    <p>Claimable: <span id="claimable">-</span></p>
+  </div>
+
+  <button onclick="claim()">💰 Claim (1 POL)</button>
+
+  <p id="status"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
